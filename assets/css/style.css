@@ -131,7 +131,36 @@ font-weight: 700;
 
 /* /* introduction end  */
 
+/* PARTNYOR SECTION SRAT */
+.trusted-section {
+    text-align: center
+}
+
+.trusted-companies {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 45px;
+}
+
+/* Pseudo class */
+
+/* :nth-child() :first-child :last-child */
 
 
+@media(max-width:768px) {
+    /* .trusted-company:nth-child(3) ,
+    .trusted-company:nth-child(4){
+        display: none; */
+        .trusted-company:nth-child(odd){
+            display: none;
+        }
+    }
+  
+@media(max-width:576px){
+    .trusted-company:nth-child(2){
+        display: none;
+    }
+}
 
-
+/* odd(tek) even(cut) */
+/* PARTNYOR SECTION END */ 
