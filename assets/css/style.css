@@ -1,0 +1,137 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root{
+    --qara-renk: #222;
+    --ag-renk: #fff;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    display: flex;
+    justify-content:space-between;
+    padding:  42px 112.5px 16.7px ;
+    align-items: center;
+}
+
+.header a {
+    color: black;
+    padding: 4px;
+    
+}
+
+.fa-bars{
+    display: none;
+}
+
+
+/* MEDIA QUERY */
+@media(max-width:768px) {
+    .header {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+.nav-links{
+    display: none;
+}
+.fa-bars{
+    display: block;
+    font-size: 24px;
+    cursor: pointer !important;
+}
+}
+
+@media(max-width:576px) {
+    .header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+}
+
+
+/* intoduction start */
+ 
+.introduction{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 112.5px;
+    padding-right: 112.5px;
+
+}
+.introduction a{
+    padding-left: 20px;
+}
+.introduction button{
+    width: 151px;
+    height: 58px;
+    background-color: var(--qara-renk);
+    color: var(--ag-renk)
+}
+.introduction .intro-left-side h1 {
+font-size: 4.5rem;
+font-weight: 700;
+}
+
+.introduction .intro-left-side h1 span{
+    color: #FF8A56;
+}
+
+.intro-left-side{
+    padding-top: 117px;
+}
+.intro-left-side p{
+    margin-top: 34px;
+    margin-bottom: 24px;
+}
+
+.intro-right-side{
+    padding-top: 70px;
+}
+.intro-right-side img{
+    width: 100%;
+}
+
+
+@media(max-width:1180px) {
+    .introduction {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+@media(max-width:1080px) {
+    .introduction {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+ @media(max-width:992px) {
+    .introduction .intro-left-side h1 {
+        font-size: 42px;
+
+    }
+ }
+@media(max-width:768px) {
+    .introduction {
+        flex-direction: column;
+        
+    }
+    .intro-left-side {
+        padding-top: 80px;
+    }
+}
+@media(max-width:320px){
+    .introduction .intro-left-side h1 {
+        text-align: center;
+    }
+}
+
+
+/* /* introduction end  */
+
+
+
+
+
